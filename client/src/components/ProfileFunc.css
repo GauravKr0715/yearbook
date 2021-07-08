@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    text-align: center;
+}
+
+.F{
+    background: rgb(13,92,117) !important;
+    background: linear-gradient(90deg, rgba(13,92,117,1) 0%, rgba(25,159,177,1) 51%, rgba(165,209,225,1) 100%) !important;
+    height: 100vh;
+}
+.hom {
+    text-decoration: none;
+    color: white;
+    padding-left: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    height: 90vh;
+} */
+
+.dpic {
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 70vh;
+    height: 85vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30em;
+    background-color: #F9ECE4;
+    color: black;
+    border-bottom: 5px solid #294201;
+    border-top: 5px solid #294201;
+    -webkit-box-shadow: 7px 9px 18px 0px rgba(26,26,26,1);
+    -moz-box-shadow: 7px 9px 18px 0px rgba(26,26,26,1);
+    box-shadow: 7px 9px 18px 0px rgba(26,26,26,1);
+ 
+}
+
+.Q {
+    padding: 1rem 1.4rem;
+}
+p {
+    background-color: #355c7d;
+    padding: 0.5rem 1rem;
+    border-radius: 0 16px 0 16px;
+    font-family: "Marck Script", cursive;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    border-bottom: 5px solid #a86cb2;
+    border-top: 5px solid #a86cb2;
+    box-shadow: 5px 5px 8px black !important;
+    color: white;
+}
+
+.btnS {
+    margin-top: 0.5rem;
+}
+
+.btnE{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem !important;
+}
+.qoute {
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 1rem !important;
+    font-size: 1.6rem;
+}
+
+.hom:hover {
+    color: black;
+    text-shadow: 3px 3px 5px white;
+}
+
+.image {
+    margin-top: 2rem;
+    /*  margin-right: 4rem; 
+     margin-left: 40em;  */
+    border-radius: 50%;
+    width: 13rem;
+    height: 12rem;
+    box-shadow: 4px 4px 4px 2px rgb(65, 59, 59);
+}
+input[type="file"] {
+    display: none;
+}
+
+.label {
+    margin-top: 1.7rem;
+    /* margin-right: 4rem; */
+    /* margin-left: 43em; */
+}
+.upl {
+    padding: 0.7rem;
+   
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #043c41 !important;
+    color: white;
+    border-radius: 5px 2px 5px 2px;
+    box-shadow: 3px 3px 4px rgb(44, 44, 44);
+}
+
+.upl:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

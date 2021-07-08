@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.P{
+    background: rgb(0,11,18) !important;
+background: linear-gradient(90deg, rgba(0,11,18,1) 0%, rgba(9,75,108,1) 46%, rgba(215,237,226,1) 100%)!important;
+}
+.hom{
+    text-decoration: none;
+    color: white;
+    padding-left: 1.7rem;
+    padding-bottom: 1rem;
+   
+}
+
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+   
+    height: 90vh;
+    
+}
+
+.dp{
+    margin-left: 18em;
+    margin-top:1rem ;
+    border-radius: 10px 10px 10px 10px;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+    width:130vh;
+    height: 87vh;
+    background-color: #d3d4d7;
+    color: black;
+    border-bottom:5px solid #294201;
+    border-top:5px solid #294201;
+   
+}
+
+.Q{
+    padding: 1rem 1.4rem;
+    
+}
+.p{
+    background-color: #214d72;
+   padding:0.3rem 1rem;
+    border-radius: 0 16px 0 16px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.6rem;
+    
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+    
+    border-bottom:5px solid  #01374d;
+    border-top:5px solid  #01374d;
+    box-shadow: 3px 3px 6px black;
+    color: rgb(19, 18, 18);
+    text-shadow: 0 3px 4px black !important;
+}
+
+
+
+
+
+.hom:hover{
+   
+    color: black;
+    text-shadow: 3px 3px 5px white;
+}
+
+
+
+.img{
+    margin-top: 2rem;
+      border-radius: 5px 5px 5px 5px !important;
+   width: 55vh;
+    height:55vh;
+    box-shadow: 4px 4px 4px 2px rgb(65, 59, 59);
+   
+}
+input[type=file]{
+    display: none;
+}
+
+.label{
+    margin-top: 1.7rem;
+    /* margin-right: 4rem; */
+    /* margin-left: 43em; */
+}
+.upl{
+   
+    padding: 0.7rem;
+    background: #A3263F;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+background: -moz-linear-gradient(left, #202901 0%, #87592E 50%, #037070 100%);
+background: -webkit-linear-gradient(left, #A3263F 0%, #8d182c 50%, #C54222 100%);
+background: linear-gradient(to right, #A3263F 0%, #87592E 50%, #f30a29 100%);
+
+color: white;
+border-radius: 5px 2px 5px 2px;
+box-shadow: 3px 3px 4px rgb(44, 44, 44);
+}
+
+.upl:hover{
+    cursor: pointer;
+   opacity: 0.8;
+}

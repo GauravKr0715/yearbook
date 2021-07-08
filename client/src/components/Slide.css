@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Sl{
+    background: rgb(75,237,239) !important;
+background: linear-gradient(90deg, rgba(75,237,239,1) 6%, rgba(228,226,36,1) 92%) !important;
+    
+}
+img{
+    width: 203.8vh;
+    height: 77vh;
+}
+
+.box img{
+    width :4rem;
+    height:4rem;
+
+}
+.flex{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    
+
+    
+    margin-left: 15rem;
+    top: 65%;
+    height: 15rem;
+    background-color: white;
+    border-radius: 8px 8px 8px 8px ;
+    box-shadow: 5px 5px 8px solid rgb(167, 11, 11);
+    border-right: 2px rgb(218, 214, 214);
+    
+   
+    
+}
+.flex .box{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 7;
+    cursor: pointer;
+    padding: 1.9rem;
+   border-radius: 9px;
+   border-bottom: 4px solid linear-gradient(90deg, rgb(231, 15, 80) 0%, rgb(3, 88, 69) 94%);
+   -webkit-box-shadow: 0 14px 16px -6px #000000;
+   -moz-box-shadow: 0 14px 16px -6px #000000;
+   box-shadow: 0 14px 16px -6px #000000;
+   
+   
+   
+}
+
+.flex .box img{
+    width :5.6rem;
+    height:5.6rem;
+    
+}
+.flex .box h3{
+    padding-top: 2.5rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-size-adjust: 2rem;
+    color: black;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+   
+}
+
+.a:hover{
+    text-decoration: none;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: rgba(17, 78, 2, 0.678);
+    border-radius: 6px 6px 6px 6px ;
+   
+    color: white!important;
+    
+     
+    border-bottom: 8px solid rgb(8, 36, 1);
+    transition: all 0.3s ease-out;
+    transform: scale(1.15);
+    
+ 
+    
+    
+   
+}
+
+
+#two:hover{
+    background-color: rgba(150, 128, 3, 0.623);
+    border-bottom: 8px solid rgb(90, 62, 2);
+}
+
+#thee:hover{
+   background-color: rgba(2, 61, 85, 0.644);
+   border-bottom: 8px solid rgb(1, 33, 54);
+}
+
+#four:hover{
+         background-color: rgba(63, 62, 62, 0.678);
+         border-bottom: 8px solid rgb(17, 17, 17);
+}
+
+#five:hover{
+     background-color: rgba(119, 16, 16, 0.671);
+     border-bottom: 8px solid rgb(63, 0, 0);
+}
+

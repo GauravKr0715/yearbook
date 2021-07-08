@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+
+.box img{
+    width :4rem;
+    height:4rem;
+
+}
+.flex{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    
+
+    
+    margin-left: 11rem;
+    top: 65%;
+    height: 12rem;
+    background-color: white;
+    border-radius: 8px 8px 8px 8px ;
+    box-shadow: 5px 5px 8px solid rgb(167, 11, 11);
+    border-right: 2px rgb(218, 214, 214);
+    border-right-style: inset;
+   
+    
+}
+.flex .box{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    padding: 1.9rem;
+      border-right: 1px solid rgb(219, 215, 215);
+
+    border-bottom: 8px rgb(218, 214, 214);
+    border-bottom-style: inset;
+   
+   
+}
+.flex .box h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(17, 78, 2);
+    border-radius: 6px 6px 6px 6px ;
+   
+    color: white!important;
+    
+     
+    border-bottom: 8px solid rgb(8, 36, 1);
+    transition: all 0.3s ease-out;
+    transform: scale(1.15);
+    
+ 
+    
+    
+   
+}
+
+
+#two:hover{
+    background-color: rgba(150, 128, 3, 0.445);
+    border-bottom: 8px solid rgb(90, 62, 2);
+}
+
+#thee:hover{
+   background-color: rgb(2, 61, 85);
+   border-bottom: 8px solid rgb(1, 33, 54);
+}
+
+#four:hover{
+         background-color: rgb(63, 62, 62);
+         border-bottom: 8px solid rgb(17, 17, 17);
+}
+
+#five:hover{
+     background-color: rgb(119, 16, 16);
+     border-bottom: 8px solid rgb(63, 0, 0);
+}
+

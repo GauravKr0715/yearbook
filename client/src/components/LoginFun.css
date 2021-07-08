@@ -1,0 +1,133 @@
+.bag{
+  position: absolute;
+    background: linear-gradient(60deg, #997f0b, #035d43, #d7ce1c, #0cc0bd, #b12076) ;
+    background-size: 1000% 1000% ;
+
+    -webkit-animation: AnimationName 11s ease infinite ;
+    -moz-animation: AnimationName 11s ease infinite ;
+    animation: AnimationName 11s ease infinite  ;
+    top: 0;
+    height: 800px;
+   width:100%;
+   
+   
+       
+   }
+
+   
+   .entry-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:600px !important;
+    background-color: aliceblue;
+    width: 80vh;
+    
+    text-align: center;
+    -webkit-box-shadow: 11px 10px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 11px 10px 5px 0px rgba(0,0,0,1);
+box-shadow: 11px 10px 5px 0px rgba(0,0,0,1);
+   
+   
+    background-color: rgba(0, 0, 0, 0.336) !important;
+    color: white;
+    margin-left: 26em;
+    margin-top: 2rem;
+    border-radius: 10px 10px 10px 10px;
+   
+  
+  }
+
+  h1{
+    position: absolute;
+    top:9%;
+    left:40%;
+    font-size: 4rem !important;
+    text-shadow: #1b1b1b 3px 5px 2px, 2px 2px 2px rgba(29, 28, 27, 0);
+    padding-bottom: 2rem !important;
+    
+  }
+  
+  label{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 0.7rem;
+    padding-top: 0.9rem;
+    text-shadow: 0 5px 6px black;
+  }
+
+  
+  ul{
+    list-style-type: none;
+  }
+
+  button{
+      margin-top: 3rem !important;
+      padding: 0.6rem 1.5rem;
+      background-color: #520131;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.3rem !important;
+      box-shadow: 0 4px 6px rgb(43, 42, 42) !important;
+      border-radius: 12px 8px 12px 8px !important;
+  }
+
+  button:hover{
+      cursor: pointer;
+      background-color: #914a74;
+      color: white;
+      box-shadow: 0 4px 6px rgb(43, 42, 42);
+      border-radius: 30%
+
+  }
+
+  button i{
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 5px 6px black;
+  }
+  
+input{
+    
+    border-radius: 6px 0 6px 0;
+    outline: none;
+    border-bottom:3px solid  #520131;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    box-shadow: 0 5px 6px black;
+    font-size: 1.7rem !important;
+    height: 2.6rem !important;
+   
+   
+    
+
+}
+
+input:hover{
+  box-shadow: 0 5px 6px black;
+  font-size: 2rem !important;
+  height: 2.6rem !important;
+    border-radius: 0 6px 0 6px ;
+    border-top:3px solid  #520131;
+    border-bottom: 1px solid black;
+
+
+}
+
+   @-webkit-keyframes AnimationName {
+    0%{background-position:0% 15% }
+    50%{background-position:100% 86% }
+    100%{background-position:0% 15% }
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 15% }
+    50%{background-position:100% 86% }
+    100%{background-position:0% 15% }
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 15% }
+    50%{background-position:100% 86% }
+    100%{background-position:0% 15% }
+  }

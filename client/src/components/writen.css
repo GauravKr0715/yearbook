@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+body {
+   
+    
+    
+    
+   overflow:visible !important;
+}
+
+.all{
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(115,149,174,1) 53%, rgba(0,0,0,1) 95%) !important;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+h1{
+    position: absolute;
+    color: white;
+   
+}
+
+.pp{
+    padding-top: 1rem !important;
+    font-size: 1.5rem;
+    margin-left: 7rem !important;
+    background-color: rgb(207, 207, 207);
+    width: 70% !important;
+   
+}
+/* Add styles to the form container */
+.containers {
+   background-color: #0a0a0a !important;/*TO MAKE TRNSPARENT MAKE 0 LAST ONE*/
+   padding: 20px;
+   width: 50% !important;
+   height: 100% !important;
+   display: flex;
+   flex-direction: column;
+  margin-left: 24em;
+   margin-bottom: 5rem;
+   backdrop-filter: blur(5px);
+   border-radius: 10px;
+   box-shadow: 0 25px 45px rgba(243, 243, 243, 0.925) !important;
+}
+
+/* Full-width input fields */
+input[type="name"],
+input[type="number"],
+input[type="text"] {
+    font-family: "Roboto", sans-serif;
+    
+    padding: 15px;
+   margin-left: 5em;
+    border-radius: 10px 10px 10px 10px;
+    background: #f1f1f1;
+}
+input[type="text"]{
+    width:60% !important;
+    margin-left: 9rem;
+}
+
+input[type="name"]{
+    width:50%;
+    margin-left: 11rem;
+}
+input[type="text"]:hover{
+    width: 60% !important;
+
+}
+
+input[type="name"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color:#695a00 !important;
+        /*TO MAKE TRNSPARENT MAKE 0 LAST ONE*/
+    color: white !important;
+    padding: 16px 30px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px black;
+    opacity: 0.9;
+    width:30% !important; 
+    margin-left: 16rem;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+div.a {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    height: 100px;
+    /*background-color: powderblue;*/
+
+    /* border: 3px solid #73AD21;*/
+}
+div.b {
+    text-align: center;
+
+   
+    /* border: 1px solid #73AD21;*/
+}
+/* .c {
+    text-align: center;
+  position: relative;
+    height: fit-content;
+   border: none!important;
+   
+   
+} */
+#myUL {
+    text-align: justify;
+}
+li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    border: 4px #04aa6f;
+    background-color: rgba(
+        134,
+        226,
+        122,
+        0
+    ); /*TO MAKE TRNSPARENT MAKE 0 LAST ONE*/
+
+    font-size: 18px;
+    transition: 0.2s;
+    margin: 0;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+
+
+.result-container {
+   
+    border-radius: 20px !important;
+    background-color: rgb(10, 10, 10);
+    position: absolute;
+    top: 150px;
+    width: 40%;
+    margin-left: 13rem;
+    background-color: rgb(62, 65, 65);
+    color: black !important;
+    z-index: 1000;
+}
+
+.result-container .result-inner-container {
+    padding: 10px;
+    color: black !important;
+    cursor: pointer;
+   
+    
+}
+
+.result-container .result-inner-container:hover {
+    background-color: rgb(177, 140, 140);
+    border-radius: 20px;
+    color: black !important;
+    
+}
+
+.text{
+    height: 5rem !important;
+    width: 20rem !important;
+}
+.text:hover{
+    height: 5rem !important;
+    width: 20rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.usr{
+    color: white !important;
+
+}
+
+.label{
+    color: white !important;
+}
+
+.result-container .result-inner-container .result-name{
+    width:30% !important;
+    border-radius: 50%;
+    color: whitesmoke !important;
+    font-size: 1rem !important;
+}
+
+.comment-sections{
+    margin-bottom: 2rem ;
+    border: none !important;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(22, 22, 22, 1);
+-moz-shadow: 0px 0px 8px 4px rgba(22, 22, 22, 1);
+box-shadow: 0px 0px 8px 4px rgba(22, 22, 22, 1);
+    width: 50%;
+    margin-left: 22em ;
+    margin-bottom: 2rem !important;
+}
+.comment-bodys, .text-muteds ,small{
+    color: white !important;
+    margin: 0.5rem, 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+   
+}
+.comment-bodys{
+    display: flex;
+    font-family: 'Dosis', sans-serif !important;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-shadow: 0 5px 6px black;
+    
+}
+.text-muteds{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.username{
+    font-size: 2rem;
+    background-color: white;
+    width: 40%;
+    margin-left: 13rem;
+    border-radius: 20px;;
+}

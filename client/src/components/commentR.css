@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: border-box;
+    font-family: "El Messiri", sans-serif;
+}
+
+body {
+    background: rgb(227,175,188) !important;
+    background: linear-gradient(90deg, rgba(227,175,188,1) 2%, rgba(93,0,30,1) 46%, rgba(0,0,0,1) 95%) !important ;
+    overflow: visible;
+    height: 900px !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.webname {
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.navlinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navlinks li:hover {
+    background-color: aqua;
+}
+
+.toggle {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .toggle {
+        display: flex;
+    }
+
+    .navlinks {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navlinks ul li {
+        text-align: center;
+    }
+
+    .navlinks ul li a {
+        padding: 1rem 1rem;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+   
+}
+.comment-section {
+    background: inherit;
+    justify-content: left;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    margin: 10px auto;
+    width: 700px;
+    height: auto;
+    color: white !important;
+    background-color: #5d001e;
+}
+h2{
+    font-size: 3rem !important;
+    text-shadow: 0px 5px 8px #5d001e;
+}
+
+p{
+    background-color: white    ;
+    color: black;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    text-shadow: 0 4px 5px rgb(207, 206, 206);
+    border-radius:12px 12px 0px 12px ;
+    
+
+}
+
+.container {
+    
+    padding: 20px;
+    width: 60% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    background: #e3e2df !important;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2) !important;
+}
+.text-muted{
+    color: white !important;
+}
+.comment-body {
+    display: flex;
+
+    justify-content: space-between;
+    border-top: 1px solid white;
+    align-items: flex-start;
+}
+
+
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.box .square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    animation: square 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes square {
+    0%,
+    100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+.box .square:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -45px;
+}
+.box .square:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 105px;
+    left: -125px;
+    z-index: 2;
+}
+.box .square:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    bottom: 85px;
+    right: -45px;
+    z-index: 2;
+}
+.box .square:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    left: -95px;
+}
+.box .square:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -25px;
+}
+.box .square:nth-child(6) {
+    width: 85px;
+    height: 85px;
+    top: 165px;
+    right: -155px;
+    z-index: 2;
+}
