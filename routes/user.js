@@ -73,7 +73,7 @@ Router.post("/register", async (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: hashedPassword,
-        profilePicURL: "uploads/defaultImage.jpg",
+        profilePicURL: "uploads/defaultImage.jpeg",
         groupPicURL: "uploads/defaultGroupImage.png",
         quote: "Some Quote",
     });

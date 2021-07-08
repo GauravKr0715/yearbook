@@ -20,7 +20,14 @@ function Photo() {
     }, []);
 
     const verifyToken = async (token) => {
-        const res = await fetch(`http://localhost:5000/api/user/verifyToken`, {
+        // const res = await fetch(`http://localhost:5000/api/user/verifyToken`, {
+        //     method: "POST",
+        //     headers: new Headers({
+        //         Authorization: "Bearer " + token,
+        //         "Content-Type": "application/json",
+        //     }),
+        // });
+        const res = await fetch(`/api/user/verifyToken`, {
             method: "POST",
             headers: new Headers({
                 Authorization: "Bearer " + token,
@@ -45,17 +52,25 @@ function Photo() {
         var file = e.target.files[0];
         const formData = new FormData();
         formData.append("groupPic", file);
-        const res = await fetch(
-            `http://localhost:5000/api/upload/uploadGroupPic`,
-            {
-                method: "POST",
-                headers: {
-                    Authorization: localStorage.getItem("Auth-token"),
-                    userID: userId,
-                },
-                body: formData,
-            }
-        );
+        // const res = await fetch(
+        //     `http://localhost:5000/api/upload/uploadGroupPic`,
+        //     {
+        //         method: "POST",
+        //         headers: {
+        //             Authorization: localStorage.getItem("Auth-token"),
+        //             userID: userId,
+        //         },
+        //         body: formData,
+        //     }
+        // );
+        const res = await fetch(`/api/upload/uploadGroupPic`, {
+            method: "POST",
+            headers: {
+                Authorization: localStorage.getItem("Auth-token"),
+                userID: userId,
+            },
+            body: formData,
+        });
         window.location.reload();
 
         // -----------------------------------------------------
@@ -72,39 +87,37 @@ function Photo() {
         <div className="P">
             <Nav />
 
-            
-                <div className="dp">
-                    <img
-                        src={"http://localhost:5000/" + profileImg}
-                        id="pro"
-                        className="img"
-                        accept="image/*"
-                    />
+            <div className="dp">
+                <img
+                    src={profileImg}
+                    // src={"http://localhost:5000/" + profileImg}
+                    id="pro"
+                    className="img"
+                    accept="image/*"
+                />
 
-                    <input
-                        type="file"
-                        className="file"
-                        id="input"
-                        accept="image/*"
-                        onChange={imageHandler}
-                    />
-                    <div className="label">
-                        <label htmlFor="input" className="upl">
-                            Upload Pic
-                        </label>
-                    </div>
+                <input
+                    type="file"
+                    className="file"
+                    id="input"
+                    accept="image/*"
+                    onChange={imageHandler}
+                />
+                <div className="label">
+                    <label htmlFor="input" className="upl">
+                        Upload Pic
+                    </label>
+                </div>
 
-                    <div className="p">
-                        <p>
-                            "All kinds of first time in life are sometimes
-                            experience with college friends.So let's make it
-                            more memorable by uploading your Group Photo or
-                            Collage.. "
-                        </p>
-                    </div>
+                <div className="p">
+                    <p>
+                        "All kinds of first time in life are sometimes
+                        experience with college friends.So let's make it more
+                        memorable by uploading your Group Photo or Collage.. "
+                    </p>
                 </div>
             </div>
-        
+        </div>
     );
 }
 

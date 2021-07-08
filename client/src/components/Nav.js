@@ -17,7 +17,14 @@ function Nav() {
     }, []);
 
     const verifyUserToken = async (token) => {
-        const res = await fetch(`http://localhost:5000/api/verifyUser`, {
+        // const res = await fetch(`http://localhost:5000/api/verifyUser`, {
+        //     method: "GET",
+        //     headers: {
+        //         "Content-type": "application/json",
+        //         Authorization: token,
+        //     },
+        // });
+        const res = await fetch(`/api/verifyUser`, {
             method: "GET",
             headers: {
                 "Content-type": "application/json",

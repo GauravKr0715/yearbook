@@ -15,7 +15,17 @@ const Login = () => {
         setError(null);
         // alert(email);
         // alert(password);
-        const response = await fetch("http://localhost:5000/api/user/login", {
+        // const response = await fetch("http://localhost:5000/api/user/login", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify({
+        //         email: email,
+        //         password: password,
+        //     }),
+        // });
+        const response = await fetch("/api/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -29,8 +39,8 @@ const Login = () => {
         const data = await response.json();
         setLoading(false);
         if (response.status === 200) {
-            localStorage.setItem('Auth-token', data.token);
-            history.push('/');
+            localStorage.setItem("Auth-token", data.token);
+            history.push("/");
         } else {
             setError(data.message);
         }
@@ -64,10 +74,10 @@ const Login = () => {
                 <section className="entry-page">
                     <div className="field">
                         {/* <form> */}
-                        <h1>Log In <i class="fas fa-sign-in-alt"></i></h1>
-                        {error && (
-                            <h4>{error}</h4>
-                        )}
+                        <h1>
+                            Log In <i class="fas fa-sign-in-alt"></i>
+                        </h1>
+                        {error && <h4>{error}</h4>}
                         <ul>
                             <li>
                                 <label for="username">Username:</label>
@@ -103,8 +113,7 @@ const Login = () => {
                         //     userLogin();
                         // }}
                     >
-                        {loading ? 'Loading... 😃' : 'Login 😉'}
-                        
+                        {loading ? "Loading... 😃" : "Login 😉"}
                     </button>
                 </section>
             </form>

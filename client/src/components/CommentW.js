@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Nav from "../components/Nav";
 
-import "./writen.css"
-
-
+import "./writen.css";
 
 function CommentW() {
     const history = useHistory();
@@ -33,15 +31,21 @@ function CommentW() {
 
     const getMySentMessages = async () => {
         const token = localStorage.getItem("Auth-token");
-        const res = await fetch(
-            `http://localhost:5000/api/messages/mySentMessages`,
-            {
-                method: "GET",
-                headers: {
-                    Authorization: token,
-                },
-            }
-        );
+        // const res = await fetch(
+        //     `http://localhost:5000/api/messages/mySentMessages`,
+        //     {
+        //         method: "GET",
+        //         headers: {
+        //             Authorization: token,
+        //         },
+        //     }
+        // );
+        const res = await fetch(`/api/messages/mySentMessages`, {
+            method: "GET",
+            headers: {
+                Authorization: token,
+            },
+        });
         const data = await res.json();
         if (res.status === 200) {
             setMessages(data);
@@ -61,9 +65,10 @@ function CommentW() {
             return;
         }
 
-        const res = await fetch(
-            `http://localhost:5000/api/user/search?name=${search}`
-        );
+        // const res = await fetch(
+        //     `http://localhost:5000/api/user/search?name=${search}`
+        // );
+        const res = await fetch(`/api/user/search?name=${search}`);
         const data = await res.json();
         let userArray = [];
         if (data.length > 0) {
@@ -90,29 +95,39 @@ function CommentW() {
             return;
         } else {
             let msg = document.getElementById("msg").value;
-            const res = await fetch(
-                `http://localhost:5000/api/messages/newMessage`,
-                {
-                    method: "POST",
-                    body: JSON.stringify({
-                        to: selectedUser,
-                        msg: msg,
-                    }),
-                    headers: {
-                        "Content-Type": "application/json",
-                        Authorization: localStorage.getItem("Auth-token"),
-                    },
-                }
-            );
+            // const res = await fetch(
+            //     `http://localhost:5000/api/messages/newMessage`,
+            //     {
+            //         method: "POST",
+            //         body: JSON.stringify({
+            //             to: selectedUser,
+            //             msg: msg,
+            //         }),
+            //         headers: {
+            //             "Content-Type": "application/json",
+            //             Authorization: localStorage.getItem("Auth-token"),
+            //         },
+            //     }
+            // );
+            const res = await fetch(`/api/messages/newMessage`, {
+                method: "POST",
+                body: JSON.stringify({
+                    to: selectedUser,
+                    msg: msg,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: localStorage.getItem("Auth-token"),
+                },
+            });
             console.log(res.status);
+            window.location.reload();
         }
     };
 
     return (
-        
-                    
         <div className="all">
-        <Nav />
+            <Nav />
             <div class="a">
                 <b>
                     <h1>Comment to be Written</h1>
@@ -121,7 +136,9 @@ function CommentW() {
             <div class="b">
                 <form class="containers">
                     {error && <h4>{error}</h4>}
-                    <label for="rname" className="usr">Reciver's Name :</label>
+                    <label for="rname" className="usr">
+                        Reciver's Name :
+                    </label>
                     {selectedUser.length > 0 ? (
                         <div
                             onClick={() => {
@@ -136,6 +153,7 @@ function CommentW() {
                             type="Name"
                             id="rname"
                             name="name"
+                            autoComplete="off"
                             className="u1"
                             placeholder="Name"
                             required
@@ -169,9 +187,10 @@ function CommentW() {
                     )}
                     <br />
 
-                    <label for="message" className="label">Message:</label>
+                    <label for="message" className="label">
+                        Message:
+                    </label>
                     <input
-                        
                         type="text"
                         id="msg"
                         className="text"
@@ -180,6 +199,18 @@ function CommentW() {
                         required
                     />
                     <br />
+                    <input
+                        type="text"
+                        autoComplete="on"
+                        value=""
+                        style={{
+                            display: "none",
+                            opacity: 0,
+                            position: "absolute",
+                            left: "-100000px",
+                        }}
+                        readOnly={true}
+                    />
                     <br />
                     <button
                         onClick={(e) => {
@@ -212,7 +243,6 @@ function CommentW() {
                 </div>
             ) : null}
         </div>
-        
     );
 }
 

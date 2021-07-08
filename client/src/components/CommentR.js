@@ -17,15 +17,21 @@ function CommentR() {
 
     const getMyMessages = async () => {
         const token = localStorage.getItem("Auth-token");
-        const res = await fetch(
-            `http://localhost:5000/api/messages/myMessages`,
-            {
-                method: "GET",
-                headers: {
-                    Authorization: token,
-                },
-            }
-        );
+        // const res = await fetch(
+        //     `http://localhost:5000/api/messages/myMessages`,
+        //     {
+        //         method: "GET",
+        //         headers: {
+        //             Authorization: token,
+        //         },
+        //     }
+        // );
+        const res = await fetch(`/api/messages/myMessages`, {
+            method: "GET",
+            headers: {
+                Authorization: token,
+            },
+        });
         const data = await res.json();
         if (res.status === 200) {
             setMessages(data);
@@ -33,7 +39,7 @@ function CommentR() {
     };
     return (
         <div>
-        <Nav />
+            <Nav />
             <section>
                 <div class="container">
                     <h2>Comments received</h2>
